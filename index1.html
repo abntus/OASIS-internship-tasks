@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome To My Library</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 >Search your favorite books here</h2>
+    
+    <div class="navbar">
+    <div class="nav-links">
+      <a href="#">Novel</a>
+      <a href="#">Stories</a>
+      <a href="#">Hestorics</a>
+      <a href="#">Article</a>
+      </div>
+   
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search..." />
+      <button onclick="handleSearch()">Search</button>
+    </div>
+     </div>
+    
+  </section>
+  <a href="#" class="cta-button">Feed Back</a>
+
+  <section class="features">
+    <div class="feature-box"><img src="https://tse2.mm.bing.net/th/id/OIP.psW6vT29JFlMmfkiUWWJYwHaLH?w=186&h=279&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Never ending sky" width="200" height="300">Never Ending Sky</div>
+    <div class="feature-box"> <img src="https://tse2.mm.bing.net/th/id/OIP.ArQRtHlpqpQIKtChLIhQ5QHaLY?w=186&h=286&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Books of Magic" width="200" height="300">🎨 Books of Magic</div>
+    <div class="feature-box"> <img src="https://tse2.mm.bing.net/th/id/OIP.BI1lA7iGFK78Ba8kqLAA7gAAAA?w=160&h=169&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Wings of fire" width="200" height="300">🔒 Wings of Fire</div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+  <script>
+    function handleSearch() {
+      const query = document.getElementById("searchInput").value;
+      if (query.trim() !== "") {
+        alert("You searched for: " + query);
+        
+    }
+  }
+  </script>
+</body>
+</html>
+ 
